@@ -1,20 +1,20 @@
 # Working with HTML5 Media
 
-## Problem Statement
+## Learning Goals
+
+- Discuss the history of media on the web
+- Embed audio elements in HTML5
+- Embed video elements in HTML5
+- Link to audio and video converters
+
+## Introduction
 
 The internet is a highly interactive environment. As HTML authors, we might be
 given a media file and be told to put it on the internet. How can we display
 media inside of a web page _and_ make sure that it's viewable to the most
 people possible on the most devices? That will be the focus of this lesson.
 
-## Overview
-
-1. Explain the history of media on the web
-2. Demonstrate how to embed audio elements in HTML5
-3. Demonstrate how to embed video elements in HTML5
-4. Link to audio and video converters
-
-## Explain The History Of Media On The Web
+## Discuss the History of Media on the Web
 
 In the early days of HTML, media elements were more difficult to use. They
 would often require the user to download and install a plugin. Media plugins
@@ -34,7 +34,7 @@ commercial plugin approach brings about a number of problems.
 
 For these reasons and others, the W3C added media support in HTML5.
 
-## Demonstrate How to Embed Audio Elements in HTML5
+## Embed Audio Elements in HTML5
 
 To include audio in a website, use the `<audio>` element. Inside the element,
 we provide `<source>` elements whose `src` attributes point to a file on the
@@ -47,7 +47,7 @@ examples are `text/html`, `text/css`, `images/jpeg`.
 You might recall that files fit into two big buckets: binary and text.
 Sometimes we need to be more specific within those groups. We want to say this
 is a text file, but also HTML (`text/html`). Or we want to say this is a binary
-file, but also an MPEG movie (`video/mpeg`). A MIME type is a way to note, for
+file, but also a MPEG movie (`video/mpeg`). A MIME type is a way to note, for
 the computer, _exactly_ what type of file is present. It will help the
 computer find the right player. It's also a bit more precise than a simple file
 extension (`.docx` or `.img`).
@@ -65,7 +65,7 @@ Let's look at an example:
 </audio>
 ```
 
-On the first line we open the `<audio>` tag with the `controls` attribute
+On the first line, we open the `<audio>` tag with the `controls` attribute
 present. This is required to display the audio controls to start and pause
 playback, adjust the recording's volume, etc.  The presence of the `controls`
 attribute name itself is sufficient, no other properties are needed. There are
@@ -75,12 +75,12 @@ the audio on page load and repeat the audio after it ends. The
 
 In lines two and three, we provide two different source files for playback. If
 the browser does not recognize the first file type, it will ignore it and move
-on to the next. If neither of the formats are supported it will instead display
+on to the next. If neither of the formats is supported it will instead display
 the paragraph on line four. If the browser is able to play one of the source
 files it will ignore any other code below until it reaches the closing
 `</audio>` tag.
 
-## Demonstrate How To Embed Video Elements in HTML5
+## Embed Video Elements in HTML5
 
 Embedding a video is very similar to embedding audio. This can be done by
 including the `<video>` tag. Inside the video tag are source tags that point to
@@ -100,8 +100,8 @@ For the full list of accepted attributes, you can check the [MDN documentation][
 On lines two and three we provide two different source files for playback. If
 the browser does not recognize the first filetype it will ignore it and move on
 to the next just the same as it does for the audio element. If neither of the
-formats are supported it will display the paragraph instead on line four. If
-the browser is able to play one of the source files, it will. The others
+formats is supported it will display the paragraph instead on line four. If
+the browser is able to play one of the source files, it will. The other
 sources within the `<audio>` tag will be ignored.
 
 ## Link to Audio and Video Converters
